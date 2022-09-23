@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "svg": "npx svgo -f ./svg-raw -o ./svg-compressed --config ./svgo-config.js"
   },
