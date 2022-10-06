@@ -7,12 +7,14 @@
     "node": "16.x"
   },
   "scripts": {
-    "svg": "npx svgo -f ./svg-raw -o ./svg-compressed --config ./svgo-config.js"
+    "svg": "npx svgo -f ./svg-raw -o ./svg-compressed --config ./svgo-config.js",
+    "clean": "npx trash '*/**/*.svg'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "svgo": "^2.8.0"
+    "svgo": "^2.8.0",
+    "trash-cli": "^5.0.0"
   }
 }
