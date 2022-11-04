@@ -7,13 +7,17 @@
     "node": "16.x"
   },
   "scripts": {
-    "svg": "npx svgo -f ./svg-raw -o ./svg-compressed --config ./svgo-config.js",
-    "clean": "npx trash '*/**/*.svg'"
+    "toWebp": "npx imagemin ./images/img-raw/* --plugin.webp.alphaQuality=100 --plugin.webp.lossless=true -o ./images/img-compressed",
+    "img": "npx imagemin ./images/img-raw/* -o ./images/img-compressed",
+    "svg": "npx svgo -f ./svg/svg-raw -o ./sv/svg-compressed --config ./svgo-config.js",
+    "clean": "npx trash '*/**/*.{jpg,svg,png,webp}'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "imagemin-cli": "^7.0.0",
+    "imagemin-webp": "^7.0.0",
     "svgo": "^2.8.0",
     "trash-cli": "^5.0.0"
   }
