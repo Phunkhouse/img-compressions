@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "scripts": {
     "toWebp": "npx imagemin ./images/img-raw/* --plugin.webp.alphaQuality=100 --plugin.webp.lossless=true -o ./images/img-compressed",
@@ -17,8 +17,8 @@
   "license": "ISC",
   "devDependencies": {
     "imagemin-cli": "^7.0.0",
-    "imagemin-webp": "^7.0.0",
-    "svgo": "^2.8.0",
+    "imagemin-webp": "^8.0.0",
+    "svgo": "^3.0.2",
     "trash-cli": "^5.0.0"
   }
 }
